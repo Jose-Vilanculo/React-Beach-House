@@ -17,10 +17,30 @@ export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
 
+
+    /* useEffect to lock scrolling while menu is open */
+    useEffect(() => {
+    const html = document.documentElement;
+
+        if (isMenuOpen) {
+            html.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+        } else {
+            html.style.overflow = "";
+            document.body.style.overflow = "";
+        }
+
+        return () => {
+            html.style.overflow = "";
+            document.body.style.overflow = "";
+        };
+    }, [isMenuOpen]);
+
+
     /* Use effect to listen for scrolling */
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(scrollY > 30)
+            setIsScrolled(scrollY > 100)
         }
 
         window.addEventListener("scroll", handleScroll)
@@ -32,10 +52,10 @@ export const Navbar = () => {
             window.removeEventListener("scroll", handleScroll)
             window.removeEventListener("resize", handleScroll)
         }
-    }, [])
+    }, []);
 
     return (
-        <nav className={isScrolled ? classes["scrolled-navbar"] : classes["navbar"]}>
+        <nav className={isScrolled ? classes["scrolled-navbar"] : classes.navbar}>
 
             {/* Nav Logo */}
             <a href="#hero" className={classes["logo-link"]}>
@@ -58,7 +78,7 @@ export const Navbar = () => {
                 ))}
 
                 {/* Booking Button */}
-                <a href="#booking" className={classes["button"]}>
+                <a href="#booking" className={isScrolled ? classes["scrolled-button"] : classes.button}>
                     Start Booking
                 </a>
             </div>

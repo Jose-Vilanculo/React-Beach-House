@@ -1,3 +1,4 @@
+import { AboutSection } from "@/components/AboutSection"
 import { HeroSection } from "@/components/HeroSection"
 import { Navbar } from "@/components/Navbar"
 
@@ -15,6 +16,7 @@ export const Home = () => {
                 <HeroSection />
 
                 { /* About Section */ }
+                <AboutSection />
             </main>
 
             { /* Footer */ }
