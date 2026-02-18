@@ -8,11 +8,11 @@ import { useEffect, useState } from "react";
 export const AboutSection = () => {
 
     const slides = [
-        {url: "/public/beach-pics/slide-1.jpg", name: "slide-1"},
-        {url: "/public/beach-pics/slide-2.jpg", name: "slide-2"},
-        {url: "/public/beach-pics/slide-3.jpg", name: "slide-3"},
-        {url: "/public/beach-pics/slide-4.jpg", name: "slide-4"},
-        {url: "/public/beach-pics/slide-5.jpg", name: "slide-5"}
+        {url: "/beach-pics/slide-1.jpg", name: "slide-1"},
+        {url: "/beach-pics/slide-2.jpg", name: "slide-2"},
+        {url: "/beach-pics/slide-3.jpg", name: "slide-3"},
+        {url: "/beach-pics/slide-4.jpg", name: "slide-4"},
+        {url: "/beach-pics/slide-5.jpg", name: "slide-5"}
     ];
 
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);

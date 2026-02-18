@@ -44,7 +44,7 @@ export const HouseSection = () => {
 
                     <div className={classes["left-container"]}>
                         <img
-                            src="/public/house-pics/bed-room.jpg"
+                            src="/house-pics/bed-room.jpg"
                             alt="bedroom photo"
                             className={classes.images}
                         />
@@ -60,7 +60,7 @@ export const HouseSection = () => {
 
                         <div className={classes["right-upper-container"]}>
                             <img
-                                src="/public/house-pics/bed-room-3.jpg"
+                                src="/house-pics/bed-room-3.jpg"
                                 alt="bedroom photo"
                                 className={classes.images}
                             />
@@ -74,7 +74,7 @@ export const HouseSection = () => {
 
                         <div className={classes["right-lower-container"]}>
                             <img
-                                src="/public/house-pics/bed-room-2.jpg"
+                                src="/house-pics/bed-room-2.jpg"
                                 alt="bedroom photo"
                                 className={classes.images}
                             />

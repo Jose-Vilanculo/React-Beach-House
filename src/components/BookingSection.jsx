@@ -90,7 +90,7 @@ export const BookingSection = () => {
 
                 {/* Background Image */}
                 <img
-                    src="/public/beach-pics/about-us-1.jpg"
+                    src="/beach-pics/about-us-1.jpg"
                     alt="handing-over-keys"
                     className={classes["about-img"]}
                 />
