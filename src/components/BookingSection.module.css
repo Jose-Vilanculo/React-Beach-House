@@ -1,0 +1,202 @@
+.booking-section {
+    width: 100%;
+    height: auto;
+}
+.img-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.about-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.img-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(2px);
+}
+
+.heading {
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    font-style: italic;
+    color: rgba(255, 255, 255, 1);
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.text-container {
+    animation: phase-in 0.9s ease-in-out;
+}
+
+.img-text {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.calender {
+    width: 65%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    margin-top: 70px;
+    background-color: rgba(245, 245, 245, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    animation: phase-in-right 0.8s ease-in;
+}
+
+.animate {
+    animation-play-state: paused;
+}
+
+.check-in {
+    position: relative;
+    cursor: pointer;
+    width: 29%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.check-in-text {
+    color: rgba(255, 255, 255, 1);
+}
+
+.check-out {
+    position: relative;
+    cursor: pointer;
+    width: 29%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.check-out-text {
+    color: rgba(255, 255, 255, 1);
+}
+
+.guests {
+    width: 29%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.plus-minus {
+    display: flex;
+    gap: 5px;
+}
+
+.search {
+    width: 13%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 0 10px 10px 0;
+    text-decoration: none;
+    color: white;
+}
+
+.search:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.hidden-date-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+:global(run-animation) {
+    animation-play-state: running;
+}
+
+@keyframes phase-in {
+    from{
+        opacity: 0%;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+@keyframes phase-in-right {
+    from{
+        opacity: 0%;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+/*----- Media Queries ----- */
+@media screen and (max-width: 1050px) {
+    .calender {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .calender {
+        width: 80%;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 20px;
+    }
+    .check-in {
+        width: 100%;
+        padding: 0;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+    }
+    .check-out {
+        width: 100%;
+        padding: 0;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+    
+    }
+    .guests {
+        width: 100%;
+        padding: 0;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+    }
+    .search {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: rgba(255, 153, 51, 1);
+    }
+}

@@ -42,7 +42,7 @@ export const AboutSection = () => {
                 }
             })
         }, {
-            threshold: 0.5,
+            threshold: 0.4,
         })
 
         const element = document.querySelectorAll(`.${classes.animate}`);
