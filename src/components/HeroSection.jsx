@@ -1,4 +1,4 @@
-import classes from "./HeroSection.module.css"
+import classes from './HeroSection.module.css'
 
 export const HeroSection = () => {
     return (
