@@ -1,16 +1,130 @@
-# React + Vite
+# 🚀 React Beach House
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A responsive React website for booking a beach house stay.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Overview
 
-## React Compiler
+This project is a demo beach house rental website built as a prototype for a real-world property.  
+It serves as a template for a production website I am preparing for a newly completed coastal rental home.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The purpose of this project is to design and test the layout, booking interface, responsiveness, and user experience before deploying the final version.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+
+- Responsive layout
+- Interactive booking form
+- Smooth image zoom effects
+- Custom toast notifications
+- Contact section with scroll navigation
+- Clean modern design
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend:**
+- React
+- Vite
+- CSS / SCSS
+
+**Libraries / Tools:**
+- (Radix UI)
+- (React Router)
+- (Lucide-React)
+- (React-icons)
+
+---
+
+
+## 🚀 Live Demo
+
+🔗 [Live Site](coming_soon)
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/project-name.git
+```
+
+Navigate into the project folder:
+
+```bash
+cd project-name
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🧑‍💻 Usage
+
+- Browse the property
+- If interested when ready go to the bookings page to enquire
+- Fill in booking dates
+- Set the amount of guests and search
+- You'll get an automated message which you can edit or send as is
+- Fill out your contact detials and click send
+- A toasted message will pop up to imitate a succesfully send message
+- NB! This is just a mock, No message is actually sent
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+ ├── components/
+ ├── pages/
+ ├── hooks/
+ ├── assets/
+ └── App.jsx
+```
+
+---
+
+## 🧪 Future Improvements
+
+- [ ] Improve animations
+- [ ] Add backend integration for booking dates
+- [ ] Expand View House section to add more detail
+- [ ] Deploy to production
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.  
+Fork the project and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👤 Author
+
+Jose Vilanculo  
+GitHub: https://github.com/Jose-Vilanculo
+Portfolio: https://react-portfolio-seven-pi-84.vercel.app/
