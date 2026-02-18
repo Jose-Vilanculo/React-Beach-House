@@ -1,5 +1,5 @@
 import classes from './HouseSection.module.css';
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { IoBedOutline } from "react-icons/io5";
 import { LiaBathSolid } from "react-icons/lia";
