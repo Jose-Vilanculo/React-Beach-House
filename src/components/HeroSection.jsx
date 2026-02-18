@@ -4,7 +4,7 @@ export const HeroSection = () => {
     return (
         <section id="hero" className={classes["hero-section"]}>
             <img
-                src="/public/beach-pics/cropped-bg-image.jpg"
+                src="/beach-pics/cropped-bg-image.jpg"
                 alt="background-beach-image"
                 className={classes["bg-image"]}
             />
