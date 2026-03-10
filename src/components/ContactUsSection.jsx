@@ -29,6 +29,7 @@ export const ContactUsSection = () => {
     }, []);
 
 
+    /* Mock sending message */
     const { toast } = useToast();
     const [isSending, setIsSending] = useState(false);
 
@@ -80,6 +81,7 @@ export const ContactUsSection = () => {
                 </div>
             </div>
 
+            { /* Form */ }
             <div className={`${classes.form} ${classes["animate"]}`} onSubmit={sumbitHandler}>
                 <form>
 

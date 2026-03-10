@@ -7,7 +7,7 @@ import { FiMinusCircle } from "react-icons/fi";
 import { BiSearchAlt } from "react-icons/bi";
 
 
-export const BookingSection = () => {
+export const BookingSection = ({bookingRef}) => {
 
 
     /* useEffect to make element animate once on screen */
@@ -54,7 +54,7 @@ export const BookingSection = () => {
 
             const message = "Hi there! \n" +
                             `\nI'd like to enquire about the availabilty of your ` +
-                            `home from the ${checkInDate} till the ${checkOutDate} for ` +
+                            `home from ${checkInDate} till ${checkOutDate} for ` +
                             `${numberOfGuests} ${numberOfGuests > 1 ? "people" : "person"}.\n` +
                             `\nKind Regards.`;
             
@@ -85,7 +85,7 @@ export const BookingSection = () => {
     }
 
     return (
-        <section id="booking" className={classes["booking-section"]}>
+        <section id="booking" className={classes["booking-section"]} ref={bookingRef}>
             <div className={classes["img-container"]}>
 
                 {/* Background Image */}

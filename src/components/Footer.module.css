@@ -8,7 +8,7 @@ footer {
 .upper-footer {
     display: flex;
     justify-content: space-between;
-    margin: 0 50px 20px;
+    margin: 0 120px 20px;
 }
 
 .left-section {
@@ -50,7 +50,6 @@ footer {
 .right-section {
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
 }
 
 
@@ -98,7 +97,7 @@ footer {
     .upper-footer {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 20px;
+        margin: 0 50px 20px;
     }
     .left-section {
         flex: 0 0 100%;

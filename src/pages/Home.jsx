@@ -5,15 +5,18 @@ import { Footer } from "@/components/Footer"
 import { HeroSection } from "@/components/HeroSection"
 import { HouseSection } from "@/components/HouseSection"
 import { Navbar } from "@/components/Navbar"
+import { useRef } from "react"
 
 
 export const Home = () => {
+
+    const bookingRef = useRef(null);
 
     return (
         <>
         <div>
             { /* Navbar */}
-            <Navbar />
+            <Navbar bookingRef={bookingRef}/>
 
             <main>
 
@@ -23,7 +26,7 @@ export const Home = () => {
 
                 <HouseSection />
 
-                <BookingSection />
+                <BookingSection bookingRef={bookingRef}/>
 
                 <ContactUsSection />
                 
