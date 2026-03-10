@@ -38,6 +38,8 @@ export const HouseSection = () => {
             <h4 className={classes.subtitle}>Welcome Home</h4>
             <div className={classes.dash}></div>
             <h1 className={classes["about-heading"]}>View House</h1>
+
+            {/* Content Container */}
             <div className={`${classes["content-container"]} ${classes["animate"]}`}>
 
                 <div className={classes["upper-container"]}>
@@ -110,6 +112,7 @@ export const HouseSection = () => {
                     </a>
                 </div>
             </div>
+            
         </section>
     )
 }
