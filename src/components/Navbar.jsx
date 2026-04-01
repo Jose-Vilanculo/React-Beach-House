@@ -1,7 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import classes from './Navbar.module.css'
 import { FaUikit } from "react-icons/fa";
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 
 
 const navItems = [
@@ -12,7 +12,7 @@ const navItems = [
 ]
 
 
-export const Navbar = ({ bookingRef }) => {
+export const Navbar = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
@@ -54,42 +54,42 @@ export const Navbar = ({ bookingRef }) => {
         }
     }, []);
 
-    const imgRef = useRef(null);
+    // const imgRef = useRef(null);
     
 
     /* useEffect to change navbar at contact section */
-        useEffect(() => {
+        // useEffect(() => {
 
-            if (!bookingRef?.current || !imgRef?.current) return;
+        //     if (!bookingRef?.current || !imgRef?.current) return;
 
-            let lastScrollY = window.scrollY // capture last scroll position
+        //     let lastScrollY = window.scrollY // capture last scroll position
             
-            const observer = new IntersectionObserver(([entry]) => {
+        //     const observer = new IntersectionObserver(([entry]) => {
 
-                const currentScroll = window.scrollY // actual page scroll
+        //         const currentScroll = window.scrollY // actual page scroll
                 
-                if (entry.isIntersecting) {
-                    /* Add class when section enters viewport */
-                    imgRef.current.classList.add(classes["hide-img"]);
-                } else if (currentScroll < lastScrollY) {
-                    /* Remove class only when scrolling up */
-                    imgRef.current.classList.remove(classes["hide-img"]);
-                }
+        //         if (entry.isIntersecting) {
+        //             /* Add class when section enters viewport */
+        //             imgRef.current.classList.add(classes["hide-img"]);
+        //         } else if (currentScroll < lastScrollY) {
+        //             /* Remove class only when scrolling up */
+        //             imgRef.current.classList.remove(classes["hide-img"]);
+        //         }
 
-                lastScrollY = currentScroll // Update last scroll
+        //         lastScrollY = currentScroll // Update last scroll
 
-            }, {threshold: 0.9});
+        //     }, {threshold: 0.9});
         
-            observer.observe(bookingRef.current);
+        //     observer.observe(bookingRef.current);
     
-            return () => observer.disconnect();
+        //     return () => observer.disconnect();
         
-        }, [bookingRef, isScrolled]);
+        // }, [bookingRef, isScrolled]);
 
     return (
         <nav className={isScrolled ? classes["scrolled-navbar"] : classes.navbar}>
             
-            {isScrolled &&
+            {/* {isScrolled &&
                 <img
                     src="/beach-pics/cropped-bg-image-nav.jpg"
                     alt="background-beach-image-nav"
@@ -97,7 +97,7 @@ export const Navbar = ({ bookingRef }) => {
                     style={{ filter: "blur(5px)", transform: "scale(1.2)"}}
                     ref={imgRef}
                 />
-            }
+            } */}
             
             
             {/* Nav Logo */}

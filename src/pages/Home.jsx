@@ -41,7 +41,7 @@ export const Home = () => {
         <>
         <div>
             { /* Navbar */}
-            <Navbar bookingRef={bookingRef}/>
+            <Navbar/>
 
             {isOverlayOpen && (
                 <HouseSectionOverlay setIsOverlayOpen={setIsOverlayOpen} bookingRef={bookingRef}/>

@@ -34,9 +34,10 @@ export const Footer = () => {
 
                 <div className={classes["middle-section"]}>
                     <h4 className={classes.heading4}>Links</h4>
-                    {navItems.map((e) => (
+                    {navItems.map((e, key) => (
                         <a
                             href={e.href}
+                            key={key}
                             className={classes.links}
                         >
                             <span className={classes.bullet}>&gt;</span> {e.name}
