@@ -91,7 +91,8 @@ export const AboutSection = () => {
 
                 <div className={classes["right-container"]}>
                     
-                    <div className={`${classes["upper-container"]} ${classes.animate}`}>                      <img
+                    <div className={`${classes["upper-container"]} ${classes.animate}`}>
+                        <img
                             src={slides[currentSlideIndex].url}
                             alt={slides[currentSlideIndex].url}
                             className={classes.images}
