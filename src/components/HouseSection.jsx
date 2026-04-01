@@ -103,7 +103,10 @@ export const HouseSection = ({setIsOverlayOpen}) => {
                 <div className={classes["lower-container"]}>
                     <div className={classes["description-container"]}>
                         <div className={classes["text-container"]}>
-                            <p>
+                            <p
+                                onClick={() => setIsOverlayOpen((prev) => !prev)}
+                                style={{cursor: "pointer"}}
+                            >
                                 3 Bedroom 3 Bathroom house in <span className={classes.bold}>Vilankulos</span>{" "}
                                 <span className={classes.hidden}>| 23 Beach rd, Vilankulos, <span className={classes.bold}>Mozambique</span></span>
                             </p>
