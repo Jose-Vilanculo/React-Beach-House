@@ -43,7 +43,7 @@ The purpose of this project is to design and test the layout, booking interface,
 
 ## 🚀 Live Demo
 
-🔗 [Live Site](coming_soon)
+🔗 [https://react-beach-house.vercel.app/]
 
 ---
 
