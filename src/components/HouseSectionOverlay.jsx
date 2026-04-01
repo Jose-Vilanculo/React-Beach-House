@@ -107,7 +107,7 @@ export const HouseSectionOverlay = ({setIsOverlayOpen}) => {
                             22 Beach rd, Vilankulos, <span className={classes.bold}>Mozambique</span>
                         </p>
 
-                        <a href='#contact' onClick={() => setIsOverlayOpen((prev) => !prev)}>
+                        <a className={classes.link} href='#contact' onClick={() => setIsOverlayOpen((prev) => !prev)}>
                             Contact for more information
                         </a>
 

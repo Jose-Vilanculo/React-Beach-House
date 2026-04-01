@@ -300,6 +300,10 @@
 
 @media screen and (max-width: 500px) {
 
+    .location {
+        display: none;
+    }
+
     .description-container {
         margin-right: auto;
         margin-left: auto;
@@ -307,9 +311,13 @@
     .lower-container {
         flex-direction: column;
         margin-left: 0;
-        margin-right: auto;    
+        margin-right: auto; 
     }
     .upper-container {
         height: 200px;
+    }
+
+    .description-container {
+        margin-left: 10px;
     }
 }
