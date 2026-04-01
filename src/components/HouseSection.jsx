@@ -8,7 +8,7 @@ import { RxDimensions } from "react-icons/rx";
 import { Plus } from 'lucide-react';
 
 
-export const HouseSection = () => {
+export const HouseSection = ({setIsOverlayOpen}) => {
 
 
     useEffect(() => {
@@ -33,7 +33,7 @@ export const HouseSection = () => {
 
     return (
         <section id="house" className={classes["house-section"]}>
-
+            
             {/* heading */}
             <h4 className={classes.subtitle}>Welcome Home</h4>
             <div className={classes.dash}></div>
@@ -51,7 +51,10 @@ export const HouseSection = () => {
                             className={classes.images}
                         />
                         <div className={classes["img-overlay"]}>
-                            <div className={classes.more}>
+                            <div
+                                className={classes.more}
+                                onClick={() => setIsOverlayOpen((prev) => !prev)}
+                            >
                                 <Plus size={15} className={classes.plus} />
                                 <p className={classes.title}>View More</p>
                             </div>
@@ -67,7 +70,10 @@ export const HouseSection = () => {
                                 className={classes.images}
                             />
                             <div className={classes["img-overlay"]}>
-                                <div className={classes.more}>
+                                <div
+                                    className={classes.more}
+                                    onClick={() => setIsOverlayOpen((prev) => !prev)}
+                                >
                                     <Plus size={15} className={classes.plus} />
                                     <p className={classes.title}>View More</p>
                                 </div>
@@ -81,7 +87,10 @@ export const HouseSection = () => {
                                 className={classes.images}
                             />
                             <div className={classes["img-overlay"]}>
-                                <div className={classes.more}>
+                                <div 
+                                    className={classes.more}
+                                    onClick={() => setIsOverlayOpen((prev) => !prev)}
+                                >
                                     <Plus size={15} className={classes.plus} />
                                     <p className={classes.title}>View More</p>
                                 </div>
